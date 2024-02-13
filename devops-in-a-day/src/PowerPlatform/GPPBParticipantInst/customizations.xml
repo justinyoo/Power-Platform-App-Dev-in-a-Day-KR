@@ -1,0 +1,65 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities></Entities>
+  <Roles></Roles>
+  <Workflows>
+    <Workflow WorkflowId="{30607534-bfc9-ee11-9078-000d3a8c2a1c}" Name="GPPB Partcipant Inst">
+      <JsonFileName>/Workflows/GPPBPartcipantInst-30607534-BFC9-EE11-9078-000D3A8C2A1C.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1042" description="GPPB Partcipant Inst" />
+      </LocalizedNames>
+    </Workflow>
+  </Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <Connectors>
+    <Connector>
+      <connectorid>0f17a017-378a-4bce-a33d-4421f5be50ab</connectorid>
+      <description>Custom Connector for Global Power Platform Bootcamp</description>
+      <displayname>GPPB</displayname>
+      <iconbrandcolor>#007ee5</iconbrandcolor>
+      <name>pp_gppb</name>
+      <connectortype>1</connectortype>
+      <openapidefinition>/Connector/pp_gppb_openapidefinition.json</openapidefinition>
+      <connectionparameters>/Connector/pp_gppb_connectionparameters.json</connectionparameters>
+      <policytemplateinstances>/Connector/pp_gppb_policytemplateinstances.json</policytemplateinstances>
+      <iconblob>/Connector/pp_gppb_iconblob.Png</iconblob>
+    </Connector>
+  </Connectors>
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="pp_sharedgppb5fe0323f4e3d4833325f8162bc61f529b2c6_63776">
+      <connectionreferencedisplayname>GPPB GPPBParticipantInst-63776</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_gppb-5fe0323f4e3d483332-5f8162bc61f529b2c6</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <Languages>
+    <Language>1042</Language>
+  </Languages>
+</ImportExportXml>
