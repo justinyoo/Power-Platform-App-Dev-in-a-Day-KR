@@ -7,7 +7,6 @@ on:
       - 'feature/*'
     paths:
       - 'devops-in-a-day/src/ApiApp/**'
-
 jobs:
   build:
     runs-on: ubuntu-latest 
