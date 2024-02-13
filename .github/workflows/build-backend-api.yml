@@ -8,12 +8,12 @@ on:
     paths:
       - 'devops-in-a-day/src/ApiApp/**'
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest 
-#     steps:
-#       - name: Checkout repository
-#         uses: actions/checkout@v4  
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  
 
 #       - name: Setup .NET SDK
 #         uses: actions/setup-dotnet@v4
