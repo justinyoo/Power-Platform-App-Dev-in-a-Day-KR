@@ -8,4 +8,25 @@ on:
     paths:
       - 'devops-in-a-day/src/ApiApp/**'
 
-# ⬆️ 이벤트 트리거 조건을 설정합니다.
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.x
+      - name: Restore NuGet packages
+        shell: bash
+        run: |
+          dotnet restore ./devops-in-a-day/ApiApp.sln
+      - name: Build
+        shell: bash
+        run: |
+          dotnet build ./devops-in-a-day/ApiApp.sln --configuration Release
+      - name: Run tests
+        shell: bash
+        run: |
+          dotnet test ./devops-in-a-day/ApiApp.sln --configuration Release --no-build
